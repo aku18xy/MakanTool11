@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutCart"
+    tools:context="com.example.nas.makantool11.CartActivity">
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="#004d40"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llRecycleCart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtRestaurant"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtAddress"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <com.example.nas.makantool11.RecyclerAkuPunye
+                    android:id="@+id/recycleCart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                </com.example.nas.makantool11.RecyclerAkuPunye>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#ffffff"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOTAL"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:layout_toStartOf="@id/txtTotal"
+                    android:layout_marginEnd="5dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RM100.00"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold"/>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_anchor="@id/rl"
+        app:layout_anchorGravity="bottom|right|end"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edge_left">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabBack"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:elevation="10dp"
+            app:pressedTranslationZ="5dp"
+            android:layout_gravity="center"
+            app:fabSize="mini"
+            android:tint="@android:color/black"
+            app:backgroundTint="#ffffff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabOrder"
+            android:src="@drawable/ic_playlist_add_check_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:elevation="10dp"
+            app:pressedTranslationZ="5dp"
+            android:layout_gravity="center"
+            app:fabSize="normal"
+            android:tint="@android:color/black"
+            app:backgroundTint="#ffffff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ORDER"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

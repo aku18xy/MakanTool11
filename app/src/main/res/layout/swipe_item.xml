@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:visibility="visible"
+    android:weightSum="3"
+    android:background="@color/tealBiasa"
+    android:gravity="end"
+    android:id="@+id/swipeLayout">
+
+
+    <TextView
+        android:id="@+id/undo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="end"
+        android:paddingBottom="5dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="5dp"
+        android:text="UNDO"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

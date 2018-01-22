@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llCart"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/rounded_edge"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabPlus"
+        android:src="@drawable/ic_add_box_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:elevation="6dp"
+        app:pressedTranslationZ="5dp"
+        android:layout_gravity="center"
+        app:fabSize="mini"
+        android:layout_marginBottom="15dp"
+        android:tint="@android:color/black"
+        app:backgroundTint="#ffffff"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabMinus"
+        android:src="@drawable/ic_indeterminate_check_box_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        android:tint="@android:color/black"
+        app:backgroundTint="#ffffff"
+        android:background="@drawable/rounded_edge"/>
+
+</LinearLayout>
